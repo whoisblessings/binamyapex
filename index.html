@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Binamyapex | Photography & Creative Studio</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Google Material Icons (Flat) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container nav-content">
-      <a href="#" class="logo">BINAMYAPEX</a>
+      <a href="#" class="logo">
+        <span class="material-icons-round logo-icon">camera_alt</span>
+        BINAMYAPEX
+      </a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
@@ -22,56 +28,100 @@
         <li><a href="#referral">Referral</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+      <button class="menu-toggle neu-btn" aria-label="Toggle menu">
+        <span class="material-icons-round">menu</span>
       </button>
     </div>
   </nav>
 
   <!-- Hero -->
   <section id="home" class="hero">
-    <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <p class="hero-subtitle">Photography • Framing • Production</p>
+      <div class="hero-badge neu-soft">
+        <span class="material-icons-round">photo_camera</span>
+        Photography · Framing · Production
+      </div>
       <h1>Capture Moments.<br>Create Memories.</h1>
       <p class="hero-desc">Professional photography, custom framing, video production & music — all under one creative studio.</p>
       <div class="hero-btns">
-        <a href="#pricing" class="btn btn-primary">View Packages</a>
-        <a href="#contact" class="btn btn-outline">Book a Session</a>
+        <a href="#pricing" class="btn btn-primary neu-btn">
+          <span class="material-icons-round">sell</span>
+          View Packages
+        </a>
+        <a href="#contact" class="btn btn-outline neu-btn">
+          <span class="material-icons-round">event</span>
+          Book a Session
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat neu-card">
+          <span class="material-icons-round">groups</span>
+          <div>
+            <strong>500+</strong>
+            <span>Clients</span>
+          </div>
+        </div>
+        <div class="stat neu-card">
+          <span class="material-icons-round">collections</span>
+          <div>
+            <strong>2K+</strong>
+            <span>Photos</span>
+          </div>
+        </div>
+        <div class="stat neu-card">
+          <span class="material-icons-round">star</span>
+          <div>
+            <strong>4.9</strong>
+            <span>Rating</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="services" class="section services">
+  <section id="services" class="section">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">What We Offer</p>
+        <p class="section-label">
+          <span class="material-icons-round">auto_awesome</span>
+          What We Offer
+        </p>
         <h2>Our Creative Services</h2>
       </div>
       <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">📸</div>
+        <div class="service-card neu-card">
+          <div class="service-icon neu-icon">
+            <span class="material-icons-round">photo_camera</span>
+          </div>
           <h3>Photography</h3>
           <p>Professional photoshoots for portraits, events, products & lifestyle. High-quality images that tell your story.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🖼️</div>
+        <div class="service-card neu-card">
+          <div class="service-icon neu-icon">
+            <span class="material-icons-round">crop_frame</span>
+          </div>
           <h3>Framing Business</h3>
           <p>Custom frames for your photos and artwork. Premium materials, expert craftsmanship, and elegant finishes.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🎥</div>
+        <div class="service-card neu-card">
+          <div class="service-icon neu-icon">
+            <span class="material-icons-round">videocam</span>
+          </div>
           <h3>Video Photoshoot</h3>
           <p>Cinematic video photography sessions. Dynamic shoots that blend stills and motion for stunning content.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🎵</div>
+        <div class="service-card neu-card">
+          <div class="service-icon neu-icon">
+            <span class="material-icons-round">music_note</span>
+          </div>
           <h3>Music Production</h3>
           <p>Original music production and sound design for videos, ads, events, and personal projects.</p>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🎬</div>
+        <div class="service-card neu-card">
+          <div class="service-icon neu-icon">
+            <span class="material-icons-round">movie</span>
+          </div>
           <h3>Video Production</h3>
           <p>Full video production — from concept to final edit. Commercials, music videos, events & more.</p>
         </div>
@@ -80,143 +130,206 @@
   </section>
 
   <!-- Pricing -->
-  <section id="pricing" class="section pricing">
+  <section id="pricing" class="section section-alt">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">Packages</p>
+        <p class="section-label">
+          <span class="material-icons-round">payments</span>
+          Packages
+        </p>
         <h2>Photography Pricing</h2>
         <p class="section-desc">Simple, transparent packages designed for every need.</p>
       </div>
       <div class="pricing-grid">
-        <div class="price-card">
+        <div class="price-card neu-card">
+          <div class="price-icon neu-icon">
+            <span class="material-icons-round">photo_library</span>
+          </div>
           <h3>5 Photoshoots</h3>
           <div class="price">KSh 260</div>
           <p class="price-note">Perfect starter package</p>
           <ul>
-            <li>5 professional photoshoot sessions</li>
-            <li>High-resolution edited photos</li>
-            <li>Online gallery delivery</li>
-            <li>Basic retouching included</li>
+            <li><span class="material-icons-round">check_circle</span> 5 professional sessions</li>
+            <li><span class="material-icons-round">check_circle</span> High-res edited photos</li>
+            <li><span class="material-icons-round">check_circle</span> Online gallery delivery</li>
+            <li><span class="material-icons-round">check_circle</span> Basic retouching included</li>
           </ul>
-          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#contact" class="btn btn-primary neu-btn">Get Started</a>
         </div>
-        <div class="price-card featured">
+        <div class="price-card neu-card featured">
           <div class="badge">Best Value</div>
+          <div class="price-icon neu-icon">
+            <span class="material-icons-round">all_inclusive</span>
+          </div>
           <h3>Unlimited</h3>
           <div class="price">$8</div>
           <p class="price-note">All-access creative freedom</p>
           <ul>
-            <li>Unlimited photoshoot sessions</li>
-            <li>Priority scheduling</li>
-            <li>Premium editing & retouching</li>
-            <li>Full online gallery + downloads</li>
-            <li>Framing discount included</li>
+            <li><span class="material-icons-round">check_circle</span> Unlimited sessions</li>
+            <li><span class="material-icons-round">check_circle</span> Priority scheduling</li>
+            <li><span class="material-icons-round">check_circle</span> Premium editing</li>
+            <li><span class="material-icons-round">check_circle</span> Full gallery + downloads</li>
+            <li><span class="material-icons-round">check_circle</span> Framing discount</li>
           </ul>
-          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#contact" class="btn btn-primary neu-btn">Get Started</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio - Free Unsplash stock images -->
-  <section id="portfolio" class="section portfolio">
+  <!-- Portfolio -->
+  <section id="portfolio" class="section">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">Our Work</p>
+        <p class="section-label">
+          <span class="material-icons-round">grid_view</span>
+          Our Work
+        </p>
         <h2>Featured Portfolio</h2>
       </div>
       <div class="portfolio-grid">
-        <div class="portfolio-item">
+        <div class="portfolio-item neu-card">
           <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&q=80" alt="Portrait photography" loading="lazy">
-          <div class="portfolio-overlay"><span>Portrait</span></div>
+          <div class="portfolio-overlay">
+            <span class="material-icons-round">person</span>
+            <span>Portrait</span>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item neu-card">
           <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80" alt="Event photography" loading="lazy">
-          <div class="portfolio-overlay"><span>Events</span></div>
+          <div class="portfolio-overlay">
+            <span class="material-icons-round">celebration</span>
+            <span>Events</span>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item neu-card">
           <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80" alt="Lifestyle photography" loading="lazy">
-          <div class="portfolio-overlay"><span>Lifestyle</span></div>
+          <div class="portfolio-overlay">
+            <span class="material-icons-round">landscape</span>
+            <span>Lifestyle</span>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item neu-card">
           <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=800&q=80" alt="Product photography" loading="lazy">
-          <div class="portfolio-overlay"><span>Product</span></div>
+          <div class="portfolio-overlay">
+            <span class="material-icons-round">inventory_2</span>
+            <span>Product</span>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item neu-card">
           <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&q=80" alt="Cinematic video" loading="lazy">
-          <div class="portfolio-overlay"><span>Video</span></div>
+          <div class="portfolio-overlay">
+            <span class="material-icons-round">videocam</span>
+            <span>Video</span>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item neu-card">
           <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80" alt="Music production" loading="lazy">
-          <div class="portfolio-overlay"><span>Music</span></div>
+          <div class="portfolio-overlay">
+            <span class="material-icons-round">music_note</span>
+            <span>Music</span>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item neu-card">
           <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&q=80" alt="Studio photography" loading="lazy">
-          <div class="portfolio-overlay"><span>Studio</span></div>
+          <div class="portfolio-overlay">
+            <span class="material-icons-round">apartment</span>
+            <span>Studio</span>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item neu-card">
           <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Male portrait" loading="lazy">
-          <div class="portfolio-overlay"><span>Portrait</span></div>
+          <div class="portfolio-overlay">
+            <span class="material-icons-round">face</span>
+            <span>Portrait</span>
+          </div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item neu-card">
           <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80" alt="Fashion photography" loading="lazy">
-          <div class="portfolio-overlay"><span>Fashion</span></div>
+          <div class="portfolio-overlay">
+            <span class="material-icons-round">checkroom</span>
+            <span>Fashion</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Referral -->
-  <section id="referral" class="section referral">
+  <section id="referral" class="section section-alt">
     <div class="container">
       <div class="referral-content">
         <div class="section-header">
-          <p class="section-label">Earn With Us</p>
+          <p class="section-label">
+            <span class="material-icons-round">card_giftcard</span>
+            Earn With Us
+          </p>
           <h2>Referral Program</h2>
           <p class="section-desc">Share Binamyapex with friends and family. Every successful referral earns you <strong>$4</strong>.</p>
         </div>
         <div class="referral-steps">
-          <div class="step">
-            <span class="step-num">1</span>
+          <div class="step neu-card">
+            <div class="step-num neu-icon">
+              <span class="material-icons-round">share</span>
+            </div>
             <h4>Share Your Link</h4>
             <p>Get your unique referral link after signing up.</p>
           </div>
-          <div class="step">
-            <span class="step-num">2</span>
+          <div class="step neu-card">
+            <div class="step-num neu-icon">
+              <span class="material-icons-round">handshake</span>
+            </div>
             <h4>Friends Book</h4>
             <p>They book any service using your link.</p>
           </div>
-          <div class="step">
-            <span class="step-num">3</span>
+          <div class="step neu-card">
+            <div class="step-num neu-icon">
+              <span class="material-icons-round">payments</span>
+            </div>
             <h4>You Earn $4</h4>
             <p>Receive $4 for every successful referral.</p>
           </div>
         </div>
-        <a href="#contact" class="btn btn-primary">Join Referral Program</a>
+        <a href="#contact" class="btn btn-primary neu-btn">
+          <span class="material-icons-round">group_add</span>
+          Join Referral Program
+        </a>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section contact">
+  <section id="contact" class="section">
     <div class="container">
       <div class="section-header">
-        <p class="section-label">Get In Touch</p>
+        <p class="section-label">
+          <span class="material-icons-round">mail</span>
+          Get In Touch
+        </p>
         <h2>Book Your Session</h2>
       </div>
       <div class="contact-grid">
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form neu-card" id="contactForm">
           <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your name">
+            <label for="name">
+              <span class="material-icons-round">person</span>
+              Full Name
+            </label>
+            <input type="text" id="name" name="name" required placeholder="Your name" class="neu-inset">
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="you@example.com">
+            <label for="email">
+              <span class="material-icons-round">email</span>
+              Email
+            </label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" class="neu-inset">
           </div>
           <div class="form-group">
-            <label for="service">Service Interested In</label>
-            <select id="service" name="service">
+            <label for="service">
+              <span class="material-icons-round">category</span>
+              Service Interested In
+            </label>
+            <select id="service" name="service" class="neu-inset">
               <option value="photography">Photography</option>
               <option value="framing">Framing</option>
               <option value="video-photoshoot">Video Photoshoot</option>
@@ -226,25 +339,43 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+            <label for="message">
+              <span class="material-icons-round">chat</span>
+              Message
+            </label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." class="neu-inset"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="submit" class="btn btn-primary neu-btn">
+            <span class="material-icons-round">send</span>
+            Send Message
+          </button>
         </form>
-        <div class="contact-info">
+        <div class="contact-info neu-card">
+          <div class="contact-info-icon neu-icon">
+            <span class="material-icons-round">storefront</span>
+          </div>
           <h3>Binamyapex Studio</h3>
           <p>Professional photography, framing, music & video production.</p>
           <div class="info-item">
-            <strong>Email</strong>
-            <a href="mailto:hello@binamyapex.com">hello@binamyapex.com</a>
+            <span class="material-icons-round">email</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:hello@binamyapex.com">hello@binamyapex.com</a>
+            </div>
           </div>
           <div class="info-item">
-            <strong>Location</strong>
-            <span>Available for bookings nationwide</span>
+            <span class="material-icons-round">location_on</span>
+            <div>
+              <strong>Location</strong>
+              <span>Available for bookings nationwide</span>
+            </div>
           </div>
           <div class="info-item">
-            <strong>Packages from</strong>
-            <span>KSh 260 · $8 Unlimited</span>
+            <span class="material-icons-round">sell</span>
+            <div>
+              <strong>Packages from</strong>
+              <span>KSh 260 · $8 Unlimited</span>
+            </div>
           </div>
         </div>
       </div>
@@ -254,8 +385,11 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <a href="#" class="logo">BINAMYAPEX</a>
+      <div class="footer-content neu-card">
+        <a href="#" class="logo">
+          <span class="material-icons-round logo-icon">camera_alt</span>
+          BINAMYAPEX
+        </a>
         <p>© 2026 Binamyapex. All rights reserved.</p>
       </div>
     </div>
